@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="de.robv.android.xposed.installer"
+<manifest package="com.pinma.pmxped.installer"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
@@ -32,7 +32,7 @@
             android:exported="true"
             android:theme="@style/Theme.XposedInstaller.Transparent">
             <intent-filter>
-                <action android:name="de.robv.android.xposed.installer.DOWNLOAD_DETAILS"/>
+                <action android:name="com.pinma.pmxped.installer.DOWNLOAD_DETAILS"/>
 
                 <data android:scheme="package"/>
 
@@ -92,7 +92,7 @@
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="de.robv.android.xposed.installer.fileprovider"
+            android:authorities="com.pinma.pmxped.installer.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
